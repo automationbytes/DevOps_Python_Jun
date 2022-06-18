@@ -1,0 +1,56 @@
+Comments
+--------------
+
+- Comments in Python can be used to explain any program code. It can also be used to hide the code as well.
+
+- Comments are the most helpful stuff of any program. It enables us to understand the way, a program works. In python, any statement written 
+  along with # symbol is known as a comment. The interpreter does not interpret the comment.
+
+- Comment is not a part of the program, but it enhances the interactivity of the program and makes the program readable.
+
+Python supports two types of comments:
+
+1) Single Line Comment
+
+2) Multi Line Comment:
+
+1) Single Line Comment:
+---------------------------------
+
+In case user wants to specify a single line comment, then comment must start with ?#?
+
+Example
+------------
+
+    # This is single line comment.  
+    print "Hello Python"  
+
+Output:
+----------
+
+  Hello Python
+
+2) Multi Line Comment:
+--------------------------------
+
+Multi lined comments are given inside triple quotes.
+
+Example
+------------
+
+    ''''' This 
+        Is a
+        Multiline comment'''  
+
+Example
+------------
+
+    #single line comment  
+    print "Hello Python"  
+    '''''This is 
+    multiline comment'''  
+
+Output:
+----------
+
+  Hello Python

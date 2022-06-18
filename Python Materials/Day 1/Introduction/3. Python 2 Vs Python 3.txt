@@ -1,0 +1,6 @@
+Python 2 vs. Python 3
+-----------------------------
+
+In most of the programming languages, whenever a new version releases, it supports the features and syntax of the existing version of the 
+language, therefore, it is easier for the projects built in the language to switch in the newer version. However, in the case of python, the two 
+versions python 2 and python 3 are very much different from each other.

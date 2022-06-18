@@ -1,0 +1,96 @@
+Variables
+-------------
+
+- Variables are nothing but reserved memory locations to store value. Variable is a name which is used to refer to a memory location. 
+  This means that when you create a variable you reserve some space in memory.
+
+- Variable is also an identifier.
+
+- Python is a dynamically typed language, hence we need not define the type of the variable while declaring it. The interpreter implicitly binds 
+  the value with its type. 
+
+- Variable names can be a combination of both letters and digits, but they must begin with a letter (or) an underscore.
+
+- It is recomended to use lowercase letters for variable name. Number and number both are two different variables.
+
+Naming Variables
+------------------------
+
+ An Identifier is used to identify the literals used in the program.Variables are the example of identifiers. The following rules should be followed
+ while naming a variable:
+
+    The first character of the variable must be an alphabet or underscore ( _ ).
+    
+    All the characters except the first character may be an alphabet of lower-case(a-z), upper-case (A-Z), underscore or digit (0-9).
+     
+    Identifier name must not contain any white-space, or special character (!, @, #, %, ^, &, *).
+       
+    Identifier name must not be similar to any keyword defined in the language.
+    
+    Identifier names are case sensitive for example myname, and MyName is not the same.
+    
+    Examples of valid identifiers : a123, _n, n_9, etc.
+       
+    Examples of invalid identifiers: 1a, n%4, n9, etc.
+
+Declaring Variables and Assigning Values
+------------------------------------------------------
+
+- Python does not bound us to declare variable before using in the application. It allows us to create variable at required time.
+
+- We don't need to declare explicitly variable in Python. When we assign any value to a variable that variable is declared automatically.
+
+- The equal (=) operator is used to assign value to a variable.
+
+Example
+------------
+
+ number=40 # An integer assignment
+ 
+ name="Ram"  # A string
+
+ salary=35000.00  # A floating point
+
+Multiple Assignment
+----------------------------
+
+- Python allows us to assign a value to multiple variables in a single statement which is also known as multiple assignment.
+
+- We can apply multiple assignments in two ways:
+
+ 1) By assigning a single value to multiple variables 
+
+    Example:
+    ------------
+
+    num1=num2=num3=100
+    print num1 
+    print num2 
+    print num3
+
+   Output:
+   ----------
+ 
+    50  
+    50  
+    50  
+
+  2) By assigning multiple values to multiple variables. 
+
+   Example
+   ------------
+
+    a,b,c=5,10,15  
+    print a  
+    print b  
+    print c  
+
+   Output:
+   ----------
+
+     5  
+    10  
+    15  
+    
+
+ Here, the values will be assigned in the order in which variables appear.

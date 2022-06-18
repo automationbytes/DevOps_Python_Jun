@@ -1,0 +1,51 @@
+
+Python Version List
+--------------------------
+
+Python programming language is being updated regularly with new features and supports. There are lots of updations in python versions, started 
+from 1994 to current release.
+
+A list of python versions with its released date is given below.
+
+Python Version	Released Date
+--------------------------	-----------------------------
+
+Python 1.0		January 1994
+
+Python 1.5		December 31, 1997
+
+Python 1.6		September 5, 2000
+
+Python 2.0		October 16, 2000
+
+Python 2.1		April 17, 2001
+
+Python 2.2		December 21, 2001
+
+Python 2.3		July 29, 2003
+
+Python 2.4		November 30, 2004
+
+Python 2.5		September 19, 2006
+
+Python 2.6		October 1, 2008
+
+Python 2.7		July 3, 2010
+
+Python 3.0		December 3, 2008
+
+Python 3.1		June 27, 2009
+
+Python 3.2		February 20, 2011
+
+Python 3.3		September 29, 2012
+
+Python 3.4		March 16, 2014
+
+Python 3.5		September 13, 2015
+
+Python 3.6		December 23, 2016
+
+Python 3.7		June 27, 2018
+
+Python 3.8		Oct 14, 2018

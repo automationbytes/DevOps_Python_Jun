@@ -1,0 +1,176 @@
+
+Datatypes
+-------------
+
+Data types in Python
+---------------------------
+
+Every value in Python has a datatype. Since everything is an object in Python programming, data types are actually classes and variables are 
+instance (object) of these classes.
+
+There are various data types in Python.
+
+   Numbers
+   List
+   Tuple
+   Set
+   Dictionary
+   Strings
+
+Python Numbers
+-----------------------
+
+- Integers, floating point numbers and complex numbers falls under Python numbers category. They are defined as int, float and complex class in 
+  Python.
+
+- Integers can be of any length, it is only limited by the memory available.
+
+- A floating point number is accurate up to 15 decimal places. Integer and floating points are separated by decimal points. 1 is integer, 1.0 is 
+  floating point number.
+
+- Complex numbers are written in the form, x + yj, where x is the real part and y is the imaginary part. 
+
+Example
+------------
+
+number= 10
+pi= 3.14
+comp= 1+2j
+
+- You can also delete the reference to a number object by using the del statement. You can delete a single object or multiple objects by using the 
+  del statement.
+
+Syntax
+----------
+
+The syntax of the del statement is:
+
+del var1[,var2[,var3[....,varN]]]]
+
+Example 
+------------
+
+del var
+del var_a, var_b
+
+type()
+--------
+
+Python enables us to check the datatype of the variable (or) value. The type() function returns the type of the variable (or) value passed. This 
+function is used to know which class a variable or a value belongs to.
+
+Example
+------------
+
+num1=10  
+msg="Hi Python"  
+num2=10.5  
+print(type(num));   
+print(type(msg));   
+print(type(num2));   
+
+Output:
+----------
+
+<type 'int'>
+<type 'str'>
+<type 'float'>
+
+isinstance() 
+---------------
+
+The isinstance() function is used to check if an object belongs to a particular class. It returns either true or false.
+
+Example
+------------
+
+num1=10  
+msg="Hi Python"  
+num2=10.5  
+print(isinstance(num1,int))
+print(isinstance(msg,str))
+print(isinstance(num2,float))
+
+Output:
+----------
+
+True
+True
+True
+
+
+Conversion between data types
+----------------------------------------
+
+- We can convert between different data types by using different type conversion functions like int(), float(), str() etc.
+
+Example
+------------
+
+print(float(5))
+
+Output:
+----------
+
+5.0
+
+- Conversion from float to int will truncate the value (make it closer to zero).
+
+Example
+------------
+
+print(int(10.6))
+print(int(-10.6))
+
+Output:
+----------
+
+10
+-10
+
+- Conversion to and from string must contain compatible values.
+
+Example
+------------
+ 
+float('2.5')
+ str(25)
+ int('1p')
+
+Output:
+----------
+
+2.5
+25
+print(int('1p'))
+ValueError: invalid literal for int() with base 10: '1p'
+
+- We can even convert one sequence to another.
+
+Example
+------------
+
+set([1,2,3])
+tuple({5,6,7})
+list('hello')
+
+Output:
+----------
+
+{1, 2, 3}
+(5, 6, 7)
+['h', 'e', 'l', 'l', 'o']
+
+- To convert to dictionary, each element must be a pair
+
+Example
+------------
+
+dict([[1,2],[3,4]])
+dict([(3,26),(4,44)])
+
+Output:
+----------
+
+{1: 2, 3: 4}
+{3: 26, 4: 44}

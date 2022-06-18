@@ -1,0 +1,104 @@
+Jump Statements
+----------------------
+
+Jump statements in python are used to alter the flow of a loop like skipping a part of a loop or terminating the loop. 
+
+Jump Statements in Python
+------------------------------------
+
+1. break
+
+2. continue
+
+3. pass 
+
+1. break
+-----------
+
+The break statement terminates the loop containing it. Control of the program flows to the statement immediately after the body of the loop.
+
+If break statement is inside a nested loop (loop inside another loop), break will terminate the innermost loop.
+
+Syntax of break
+---------------------
+
+break
+
+Example
+------------
+
+# Use of break statement inside loop
+
+for val in "string":
+    if val == "i":
+        break
+    print(val)
+
+print("The end")
+
+Output
+---------
+
+s
+t
+r
+The end
+
+Note
+------
+
+In this program, we iterate through the "string" sequence. We check if the letter is "i", upon which we break from the loop. Hence, we see in our 
+output that all the letters up till "i" gets printed. After that, the loop terminates.
+
+2. continue 
+---------------
+
+The continue statement is used to skip the rest of the code inside a loop for the current iteration only. Loop does not terminate, but continues on 
+with the next iteration.
+
+Syntax of continue
+-------------------------
+
+continue
+
+Example
+------------
+
+# Use of continue statement inside loop
+
+for val in "string":
+    if val == "i":
+        continue
+    print(val)
+
+print("The end")
+
+Output
+---------
+
+s
+t
+r
+n
+g
+The end
+
+This program is same as the above example except the break statement has been replaced with continue.
+
+We continue with the loop, if the string is "i", not executing the rest of the block. Hence, we see in our output that all the letters except "i" gets 
+printed.
+
+3.pass
+---------
+
+pass statement is generally used as a placeholder.
+
+Suppose we have a loop or a function has not been implemented yet, but it will be implemented in the future. The loop or function cannot have 
+an empty body. If the loop or function has an empty body,the interpreter would complain. So, we use the pass statement to construct a body that 
+does nothing.
+
+Syntax of pass
+-------------------
+
+pass
+

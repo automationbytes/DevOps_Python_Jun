@@ -1,0 +1,21 @@
+
+Python History
+--------------------
+
+Python laid its foundation in the late 1980s.
+
+The implementation of Python was started in the December 1989 by Guido Van Rossum at CWI in Netherland.
+
+In February 1991, van Rossum published the code (labeled version 0.9.0) to alt.sources.
+
+In 1994, Python 1.0 was released with new features like: lambda, map, filter, and reduce.
+
+Python 2.0 added new features like: list comprehensions, garbage collection system.
+
+On December 3, 2008, Python 3.0 (also called "Py3K") was released. It was designed to rectify fundamental flaw of the language.
+
+ABC programming language is said to be the predecessor of Python language which was capable of Exception Handling and interfacing with Amoeba Operating System.
+
+Python is influenced by following programming languages:
+ABC language.
+Modula-3

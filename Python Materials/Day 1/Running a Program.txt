@@ -1,0 +1,35 @@
+
+Running a python program
+-----------------------------------
+
+ Python provides us two ways to run a program:
+
+	Using,
+ 	
+	1) Interactive interpreter prompt (or) Interactive mode
+   	
+ 	2) Script file
+
+
+1) Interactive interpreter prompt
+-------------------------------------------
+
+- Python provides us the feature to execute the python statement one by one at the interactive prompt. It is preferable in the case where we are 
+  concerned about the output of each line of our python program. 
+
+- To open the interactive mode, open the terminal (or command prompt) and type python (pythonversionnumber in case if you have more than 
+   one version of python installed on your system). 
+
+- It will open Interactive mode where we can execute the python statement and check the output on the console. 
+
+2) Script file
+-----------------
+
+- Interpreter prompt is good to run the individual statements of the code. However, we can not write the code every-time on the terminal. 
+
+- To execute a set of statements, we need to write our code into a file which can be executed later. For this purpose, open an editor like notepad, 
+  create a file and save it with extension .py(python uses .py extension) and write the python code in it. 
+  Ex: first_program.py
+
+- To run a file in python, run the command 'python filename.py' on the terminal (or) command prompt. 
+   Ex: python first_program.py

@@ -1,0 +1,2 @@
+
+By default python’s print() function ends with a newline.Python’s print() function comes with a parameter called ‘end’.

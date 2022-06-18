@@ -1,0 +1,57 @@
+
+Python Applications
+---------------------------
+
+Python is known for its general purpose nature that makes it applicable in almost each domain of software development. Python as a whole can 
+be used in any sphere of development.
+
+Here, we are specifing applications areas where python can be applied.
+
+1) Web Applications
+
+We can use Python to develop web applications. It provides libraries to handle internet protocols such as HTML and XML, JSON, Email 
+processing, request, beautifulSoup, Feedparser etc. It also provides Frameworks such as Django, Pyramid, Flask etc to design and delelop web 
+based applications. Some important developments are: PythonWikiEngines, Pocoo, PythonBlogSoftware etc.
+
+2) Desktop GUI Applications
+
+Python provides Tk GUI library to develop user interface in python based application. Some other useful toolkits wxWidgets, Kivy, pyqt that are 
+useable on several platforms. The Kivy is popular for writing multitouch applications.
+
+3) Software Development
+
+Python is helpful for software development process. It works as a support language and can be used for build control and management, testing 
+etc.
+
+4) Scientific and Numeric
+
+Python is popular and widely used in scientific and numeric computing. Some useful library and package are SciPy, Pandas, IPython etc. SciPy 
+is group of packages of engineering, science and mathematics.
+
+5) Business Applications
+
+Python is used to build Bussiness applications like ERP and e-commerce systems. Tryton is a high level application platform.
+
+6) Console Based Application
+
+We can use Python to develop console based applications. For example: IPython.
+
+7) Audio or Video based Applications
+
+Python is awesome to perform multiple tasks and can be used to develop multimedia applications. Some of real applications are: TimPlayer, 
+cplay etc.
+
+8) 3D CAD Applications
+
+To create CAD application Fandango is a real application which provides full features of CAD.
+
+9) Enterprise Applications
+
+Python can be used to create applications which can be used within an Enterprise or an Organization. Some real time applications are: OpenErp, 
+Tryton, Picalo etc.
+
+10) Applications for Images
+
+Using Python several application can be developed for image. Applications developed are: VPython, Gogh, imgSeek etc.
+
+There are several such applications which can be developed using Python.
