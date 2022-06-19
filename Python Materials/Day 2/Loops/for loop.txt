@@ -1,0 +1,137 @@
+for loop in Python
+------------------------
+
+The for loop in Python is used to iterate over a sequence (list, tuple, string) or other iterable objects. Iterating over a sequence is called traversal.
+(to pass or move over a sequence of items)
+
+Syntax of for Loop
+-------------------------
+
+for val in sequence:
+	Body of for
+
+Here, val is the variable that takes the value of the item inside the sequence on each iteration.
+
+Loop continues until we reach the last item in the sequence. The body of for loop is separated from the rest of the code using indentation.
+
+Example
+------------
+
+name="sachin"
+for i in name:
+    print(i)
+
+Output
+---------
+
+s
+a
+c
+h
+i
+n
+
+range() function
+----------------------
+
+We can generate a sequence of numbers using range() function. range(10) will generate numbers from 0 to 9 (10 numbers).
+
+We can also define the start, stop and step size as range(start,stop,step size). step size defaults to 1 if not provided.
+
+This function does not store all the values in memory, it would be inefficient. So it remembers the start, stop, step size and generates the next 
+number on the go.
+
+Example
+------------
+
+for i in range(0,5,1):#start,stop,step
+    print(i)
+
+Output
+----------
+0
+1
+2
+3
+4
+
+Note
+-------
+
+In the above example start,stop and step are all given in the program
+
+Example
+------------
+
+for i in range(0,5):#start,stop,step=1(default)
+    print(i)
+
+Output
+----------
+0
+1
+2
+3
+4
+
+Note
+-------
+
+In the above example start,stop are given in the program,since step is not provided, default value 1 is taken.
+    
+Example
+------------
+
+for i in range(5):#start=0(default),stop,step=1(default)
+    print(i)
+
+Output
+----------
+0
+1
+2
+3
+4
+
+Note
+-------
+
+In the above example only one argument is given which is taken as stop, since start and step are not provided, start's default value is taken as 0
+and step's deafult value is taken as 1.
+
+for loop with else
+-----------------------
+
+A for loop can have an optional else block as well. The else part is executed if the items in the sequence used in for loop exhausts.
+
+break statement can be used to stop a for loop. In such case, the else part is ignored.
+
+Hence, a for loop's else part runs if no break occurs.
+
+Example
+------------
+
+digits = [0, 1, 5]
+
+for i in digits:
+    print(i)
+else:
+    print("No items left.")
+
+Output
+----------
+
+0
+1
+5
+No items left.
+
+Note
+------
+
+Here, the for loop prints items of the list until the loop exhausts. When the for loop exhausts, it executes the block of code in the else and prints
+No items left.
+
+
+       
+    

@@ -1,0 +1,99 @@
+Loops
+--------
+
+Loops are used in programming to repeat a specific block of code
+
+while loop in Python
+---------------------------
+
+The while loop in Python is used to iterate over a block of code as long as the test expression (condition) is true.
+
+We generally use this loop when we don't know beforehand, the number of times to iterate.
+
+Syntax of while Loop 
+----------------------------
+
+while test_expression:
+    Body of while
+
+In while loop, test expression is checked first. The body of the loop is entered only if the test_expression evaluates to True. After one iteration, 
+the test expression is checked again. This process continues until the test_expression evaluates to False.
+
+In Python, the body of the while loop is determined through indentation.
+
+Body starts with indentation and the first unindented line marks the end.
+
+
+Python interprets any non-zero value as True. None and 0 are interpreted as False.
+
+Example
+------------
+
+i=1
+while i<=5:
+    print(i)
+    i=i+1
+
+Output
+----------
+
+1
+2
+3
+4
+5
+
+Note
+-------
+
+In the above program, the test expression will be True as long as our counter variable i is less than or equal to 5 in our program.
+
+We need to increase the value of counter variable in the body of the loop. This is very important (and mostly forgotten). Failing to do so will 
+result in an infinite loop (never ending loop).
+
+Finally the result is displayed.
+
+while loop with else
+---------------------------
+
+We can have an optional else block with while loop as well.
+
+The else part is executed if the condition in the while loop evaluates to False.
+
+The while loop can be terminated with a break statement. In such case, the else part is ignored. Hence, a while loop's else part runs if no break 
+occurs and the condition is false.
+
+Example
+------------
+
+i=1
+while i<=5:
+    print(i)
+    i=i+1
+else:
+    print("While loop has finished executing")
+
+Output
+---------
+
+1
+2
+3
+4
+5
+While loop has finished executing
+
+Note
+-------
+
+In the above program, the test expression will be True as long as our counter variable i is less than or equal to 5 in our program.
+
+On the sixth iteration, the condition in while becomes False. Hence, the else part is executed.
+
+Negative condition:
+
+while (False):
+    print("it will exit")
+else:
+    print("Invalid Loop")
+
