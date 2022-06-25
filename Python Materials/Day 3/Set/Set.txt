@@ -1,0 +1,23 @@
+Set
+-----
+
+A set is a collection which is unordered and unindexed. In Python sets are written with curly brackets.
+
+Creating a Set
+-------------------
+
+A set is created by placing all the items (elements) inside curly braces {}, separated by comma.
+
+Example
+------------
+
+my_set = {1, 2, 3}
+
+print(my_set)
+
+
+Output
+----------
+{1, 2, 3} # of any order
+
+

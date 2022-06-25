@@ -1,0 +1,93 @@
+
+List
+-----
+
+- Python does not have built-in support for Arrays, but Python Lists can be used instead.
+
+- List is a collection which is ordered and mutable(modifiable). List allows duplicate elements. 
+
+- In Python, elements in a list are enclosed within square brackets [] and comma is used to separate each element. 
+
+- A single list may contain same (or) different DataTypes like Integers, Strings as well as Objects.
+
+- Each element in a list has an index associated with it. The index must be an integer. The index position starts from 0. If a list contains 'n'  
+  number of elements, then that list contains 0 to (n-1) indices. So, a list having 5 elements will have index from 0 to 4.
+
+Example
+------------
+
+fruits=["apple","banana","grape","orange"]
+print(fruits)
+
+Output:
+----------
+  
+  ['apple', 'banana', 'grape', 'orange']	
+ 
+Index in list
+----------------
+
+You can access the list items (or) modify the list items by using the index operator [ ] and the index number.
+
+Trying to access an element outside the index boundary will raise an IndexError. The index must be an integer. We can't use float or other types, 
+this will result in TypeError.
+
+Example
+------------
+
+fruits=["apple","banana","grape","orange"]
+fruits[1]="papaya"
+print(fruits[1])
+
+Output:
+----------
+
+  papaya
+
+Negative indexing
+------------------------
+
+Python allows negative indexing for its sequences. The index of -1 refers to the last item, -2 to the second last item and so on.
+
+Example
+------------
+
+fruits=["apple","banana","grape","orange"]
+print(fruits[-2])
+
+
+Output:
+----------
+
+  grape
+
+Slicing lists in python
+-----------------------------
+
+We can access a range of items in a list by using the slicing operator :(colon)
+
+Example
+------------
+
+['apple', 'papaya', 'grape', 'orange', 'guava']
+
+change or add elements to a list
+-----------------------------------------
+
+We can use assignment operator (=) to change an item or a range of items.
+
+Looping Through a List
+-------------------------------
+
+You can loop through the list items by using a for loop:
+
+
+a = ['TN', 'AP', 'KL', 'MP']
+#for each loop
+for i in a:
+    print(i)
+#for loop
+print(len(a))
+for j in range (len(a)):
+    print(a[j])
+ 

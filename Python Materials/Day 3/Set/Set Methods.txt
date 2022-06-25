@@ -1,0 +1,539 @@
+Set Methods
+-----------------
+
+1) add()
+-----------
+
+The add() method adds an element to the set. If the element already exists, the add() method does not add the element.
+
+Syntax
+---------
+
+set.add(element)
+
+Parameter Values
+------------------------
+
+Parameter 	Required/Optional 	Description
+--------------	--------------------------- 	------------------------------------------------------------------------------------
+
+element 	Required. 		The element to add to the set
+
+Example
+------------
+
+fruits = {"apple", "banana", "cherry"}
+fruits.add("apple")
+print(fruits)
+
+Output
+----------
+
+{'cherry', 'banana', 'apple'}
+
+2) clear()
+------------
+
+The clear() method removes all elements in a set.
+
+Syntax
+-----------
+
+set.clear()
+
+Parameter Values
+-----------------------
+
+No parameters
+
+Example
+------------
+
+fruits = {"apple", "banana", "cherry"}
+fruits.clear()
+print(fruits) 
+
+Output
+----------
+
+set()
+
+3) copy()
+------------
+
+The copy() method copies the set.
+
+Syntax
+----------
+
+set.copy()
+
+Parameter Values
+-----------------------
+
+No parameters
+
+Example
+------------
+
+fruits = {"apple", "banana", "cherry"}
+new_fruits = fruits.copy()
+print(new_fruits) 
+
+Output
+----------
+
+{'banana', 'cherry', 'apple'}
+
+4) difference()
+-------------------
+
+The difference() method returns a set that contains the difference between two sets.The returned set contains items that exist only in the first set, 
+and not in both sets.
+
+Syntax
+---------
+
+set.difference(set)
+
+Parameter Values
+-----------------------
+
+Parameter 	Required/Optional 	Description
+------------- ----------------------------	------------------------------------------------------
+
+set 	Required. 		The set to check for differences in
+
+Example
+------------
+
+fruits = {"apple", "banana", "cherry"}
+company = {"google", "microsoft", "apple"}
+new_set= fruits .difference(company )
+print(new_set) 
+
+Output
+----------
+
+{'banana', 'cherry'}
+
+5)difference_update()
+-----------------------------
+
+The difference_update() method removes the items that exist in both sets.The difference_update() method is different from the difference() 
+method, because the difference() method returns a new set, without the unwanted items, and the difference_update() method removes the 
+unwanted items from the original set.
+
+Syntax
+----------
+
+set.difference_update(set)
+
+Parameter Values
+-----------------------
+
+Parameter 	Required/Optional 	Description
+------------- ----------------------------	------------------------------------------------------
+
+set 	Required		The set to check for differences in
+
+Example
+------------
+
+fruits = {"apple", "banana", "cherry"}
+company = {"google", "microsoft", "apple"}
+fruits .difference_update(company )
+print(fruits)
+
+Output
+----------
+
+fruits 
+
+6) discard() 
+----------------
+
+The discard() method removes the specified item from the set. This method is different from the remove() method, because the remove() method 
+will raise an error if the specified item does not exist, and the discard() method will not.
+
+Syntax
+----------
+
+set.discard(value)
+
+Parameter Values
+-----------------------
+
+Parameter 	Required/Optional 	Description
+------------- ----------------------------	------------------------------------------------------
+
+value 	Required. 		The item to search for, and remove
+
+Example
+------------
+
+fruits = {"apple", "banana", "cherry"}
+#removes the element if present and does not raise error if not present
+fruits.discard("banana")
+print(fruits)
+
+Output
+----------
+
+{'cherry', 'apple'}
+
+7) intersection()
+---------------------
+
+The intersection() method returns a set that contains the similarity between two or more sets, i.e.,the returned set contains only items that exist in 
+both sets, or in all sets if the comparison is done with more than two sets.
+
+Syntax
+----------
+
+set.intersection(set1, set2 ... etc)
+
+Parameter Values
+------------------------
+
+Parameter 	Required/Optional 	Description
+------------- ----------------------------	------------------------------------------------------
+
+set1 	Required. 		The set to search for equal items in
+
+set2 	Optional. 		The other set to search for equal items in.You can compare as many sets you like.Separate the sets with a 
+			comma.
+
+Example
+------------
+
+fruits={"apple","mango","banana"}
+company={"apple","google","microsoft"}
+#does not affect the original set
+inter=fruits.intersection(company)
+print(inter)
+
+Output
+----------
+
+{'apple'}
+
+8) intersection_update() 
+-------------------------------
+
+The intersection_update() method removes the items that is not present in both sets (or in all sets if the comparison is done between more than 
+two sets).
+The intersection_update() method is different from the intersection() method, because the intersection() method returns a new set, without the 
+unwanted items, and the intersection_update() method removes the unwanted items from the original set.
+
+Syntax
+----------
+
+set.intersection_update(set1, set2 ... etc)
+
+Parameter Values
+-----------------------
+
+Parameter 	Required/Optional 	Description
+------------- ----------------------------	------------------------------------------------------
+
+set1 	Required. 		The set to search for equal items in
+
+set2 	Optional. 		The other set to search for equal items in.You can compare as many sets you like.Separate the sets with a 
+			comma.
+
+Example
+------------
+
+fruits={"apple","mango","banana"}
+company={"apple","google","microsoft"}
+#affects the original set
+fruits.intersection_update(company)
+print(fruits)
+
+Output
+----------
+
+{'apple'}
+
+9) isdisjoint()
+-----------------
+ 
+The isdisjoint() method returns True if none of the items are present in both sets, otherwise it returns False.
+
+Syntax
+----------
+
+set.isdisjoint(set)
+
+Parameter Values
+------------------------
+
+Parameter 	Required/Optional 	Description
+------------- ----------------------------	------------------------------------------------------
+
+set 	Required. 		The set to search for equal items in.
+
+Example
+------------
+
+fruits={"apple","mango","banana"}
+company={"asus","google","microsoft"}
+#return true if there is no common element in both sets
+print(fruits.isdisjoint(company))
+
+Output
+----------
+
+True
+
+10) issubset() 
+-------------------
+
+The issubset() method returns True if all items in the set exists in the specified set, otherwise it retuns False.
+
+Syntax
+
+set.issubset(set)
+
+Parameter Values
+
+Parameter 	Required/Optional 	Description
+------------- ----------------------------	------------------------------------------------------
+
+set 	Required. 		The set to search for equal items in
+
+Example
+------------
+
+s1={'a','b','c'}
+s2={'a','b','c','d','e'}
+print(s1.issubset(s2))
+
+Output
+----------
+
+True
+
+11) issuperset()
+---------------------
+
+The issuperset() method returns True if all items in the specified set exists in the original set, otherwise it retuns False.
+
+Syntax
+----------
+
+set.issuperset(set)
+
+Parameter Values
+-----------------------
+
+Parameter 	Required/Optional 	Description
+------------- ----------------------------	------------------------------------------------------
+
+set 	Required. The set to search for equal items in
+
+Example
+------------
+
+x1={'a','b','c','d','e'}
+x2={'a','b','c'}
+print(x1.issuperset(x2))
+
+Output
+----------
+
+True
+
+12) pop()
+-------------
+
+The pop() method removes a random item from the set.This method returns the removed item.
+
+Syntax
+----------
+
+set.pop()
+
+Parameter Values
+------------------------
+
+No parameter values.
+
+Example
+------------
+
+fruits = {"apple", "banana", "cherry"}
+fruits.pop()
+print(fruits)
+
+Output
+----------
+
+{'cherry', 'banana'}
+
+13) remove()
+------------------
+
+The remove() method removes the specified element from the set.This method is different from the discard() method, because the remove() 
+method will raise an error if the specified item does not exist, and the discard() method will not.
+
+Syntax
+----------
+
+set.remove(item)
+
+Parameter Values
+
+Parameter 	Required/Optional 	Description
+------------- ----------------------------	------------------------------------------------------
+
+item 	Required. The item to search for, and remove
+
+Example
+------------
+
+fruits = {"apple", "banana", "cherry"}
+#removes the element if present or raises an error message
+fruits.remove("mango")
+print(fruits)
+
+Output
+----------
+
+fruits.remove("mango")
+KeyError: 'mango'
+
+14) symmetric_difference()
+------------------------------------
+
+The symmetric_difference() method returns a set that contains all items from both set, but not the items that are present in both sets.The 
+returned set contains a mix of items that are not present in both sets.
+
+Syntax
+----------
+
+set.symmetric_difference(set)
+
+Parameter Values
+------------------------
+
+Parameter 	Required/Optional 	Description
+------------- ----------------------------	------------------------------------------------------
+
+set 	Required. 		The set to check for matches in
+
+Example
+------------
+
+old_fruits={"apple","mango","banana"}
+new_fruits={"apple","papaya","guava"}
+x=old_fruits.symmetric_difference(new_fruits)
+print("old_fruits",old_fruits)
+print(x)
+
+Output
+----------
+
+old_fruits {'apple', 'banana', 'mango'}
+{'guava', 'banana', 'mango', 'papaya'}
+
+15) symmetric_difference_update()
+----------------------------------------------
+
+ The symmetric_difference_update() method updates the original set by removing items that are present in both sets, and inserting the other items.
+
+Syntax
+----------
+
+set.symmetric_difference_update(set)
+
+Parameter Values
+------------------------
+
+Parameter 	Required/Optional 	Description
+------------- ----------------------------	------------------------------------------------------
+
+set 	Required. 		The set to check for matches in
+
+Example
+------------
+
+old_fruits={"apple","mango","banana"}
+new_fruits={"apple","papaya","guava"}
+#modifies the original set
+old_fruits.symmetric_difference_update(new_fruits)
+print("old_fruits",old_fruits)
+
+Output
+----------
+
+old_fruits {'guava', 'papaya', 'mango', 'banana'}
+
+16) union()
+---------------
+
+The union() method returns a set that contains all items from the original set, and all items from the specified sets.You can specify as many sets 
+you want, separated by commas.
+
+If an item is present in more than one set, the result will contain only one appearance of this item.
+
+Syntax
+---------
+
+set.union(set1, set2...)
+
+Parameter Values
+-----------------------
+
+Parameter 	Required/Optional 	Description
+------------- ----------------------------	----------------------------------------------------------------------------------------------------------------------------------------------
+
+set1 	Required. 		The set to unify with
+
+set2 	Optional. 		The other set to unify with. You can compare as many sets as you like. Separate each set with a comma.
+
+Example
+------------
+
+#removing duplicates by comparing two sets
+u1={'a','b','c','d','e'}
+u2={'g','f','h','a'}
+print(u1.union(u2))
+
+Output
+----------
+
+{'a', 'h', 'f', 'b', 'd', 'c', 'e', 'g'}
+
+17) update() 
+-----------------
+
+The update() method updates the current set, by adding items from another set.
+
+If an item is present in both sets, only one appearance of this item will be present in the updated set.
+
+Syntax
+----------
+
+set.update(set)
+
+Parameter Values
+-----------------------
+
+Parameter 	Required/Optional 	Description
+------------- ----------------------------	------------------------------------------------------
+
+set 	Required. 		The set to insert into the current set
+
+Example
+------------
+
+fruits = {"apple", "banana", "cherry"}
+fruits.update(["papaya","mango"])
+print(fruits)
+
+Output
+----------
+
+'apple', 'papaya', 'banana', 'mango', 'cherry'}

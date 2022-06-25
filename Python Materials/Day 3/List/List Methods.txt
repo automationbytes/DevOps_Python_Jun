@@ -1,0 +1,345 @@
+
+List Methods
+-----------------
+
+1) append()
+---------------
+
+The append() method appends (or) adds an element to the end of the list.
+
+Syntax
+----------
+
+list.append(element)
+
+Parameter Values
+-----------------------
+
+Parameter 	Required/Optional Description
+------------- ------------------------- --------------------------------------------------------------------
+
+element 	Required	              An element of any type (string, number, object etc.)
+
+Example
+------------
+
+fruits=["apple","banana","grape","orange"]
+fruits.append("papaya")
+print(fruits)
+
+Output:
+----------
+
+['apple', 'banana', 'grape', 'orange', 'papaya']
+
+2) clear()
+-------------
+
+The clear() method removes all the elements from a list.
+
+Syntax
+---------
+
+list.clear()
+
+Parameter Values
+-----------------------
+
+No parameters
+
+Example
+------------
+
+fruits.clear()
+print(fruits)
+
+Output
+----------
+
+[]
+
+3) copy()
+-------------
+
+The copy() method returns a copy of the specified list.
+
+Syntax
+----------
+
+list.copy()
+
+Parameter Values
+-----------------------
+
+No parameters
+
+Example
+------------
+
+fruits=["apple","banana","grape","orange"]
+new_fruits=fruits.copy()
+print(new_fruits)
+
+Output
+----------
+
+['apple', 'banana', 'grape', 'orange']
+
+4) count()
+--------------
+
+The count() method returns the number of elements with the specified value.
+
+Syntax
+----------
+
+list.count(value)
+
+
+Parameter Values
+-----------------------
+
+Parameter 	Required/Optional 	Description
+------------- --------------------------	-------------------
+
+value 	Required. 		Any type (string, number, list, tuple, etc.). The value to search for.
+
+Example
+------------
+
+fruits=["apple","banana","grape","orange","apple"]
+print(fruits.count("apple"))
+
+
+Output
+----------
+
+2
+
+5) extend()
+---------------
+
+The extend() method adds the specified list elements (or any iterable) to the end of the current list.
+
+Syntax
+----------
+
+list.extend(iterable)
+
+Parameter Values
+-----------------------
+
+Parameter 	Required/Optional 	Description
+-------------- --------------------------	------------------------------------
+
+iterable 	Required.		Any iterable (list, set, tuple, etc.)
+
+Example
+------------
+
+fruits=["apple","banana","grape","orange"]
+vegetables=["brinjal","carrot"]
+fruits.extend(vegetables)
+print(fruits)
+
+Output
+----------
+
+['apple', 'banana', 'grape', 'orange', 'brinjal', 'carrot']
+
+6) index()
+--------------
+
+The index() method returns the position at the first occurrence of the specified value.
+
+Syntax
+---------
+
+list.index(element)
+
+Parameter Values
+------------------------
+
+Parameter 	Required/Optional 	Description
+-------------	------------------------	--------------------------------------------------------------------------------------
+
+element 	Required. 		Any type (string, number, list, etc.). The element to search for
+
+Example
+------------
+
+fruits=["apple","banana","grape","orange","apple"]
+print(fruits.index("grape"))
+
+Output
+----------
+
+2
+
+
+7) insert()
+--------------
+
+The insert() method inserts the specified value at the specified position.
+
+Syntax
+----------
+
+list.insert(position, element)
+
+Parameter Values
+-----------------------
+
+Parameter 	Required/Optional 	Description
+------------- -------------------------	------------------------------------------------------------------------------------------------------------------------------------------
+
+position	Required. 		A number specifying in which position to insert the value
+
+element 	Required. 		An element of any type (string, number, object etc.)
+
+Example
+------------
+
+l1=[10,40,50,70]
+print(l1)
+l1.insert(1,20)
+print(l1)
+
+Output
+----------
+
+[10, 40, 50, 70]
+[10, 20, 40, 50, 70]
+
+8) pop()
+-----------
+
+The pop() method removes the element at the specified position if the index is passed as an argument, else it removes the last element.
+
+Syntax
+---------
+
+list.pop(pos)
+
+Parameter Values
+------------------------
+
+Parameter 	Required/Optional 	Description
+-------------- --------------------------	------------------------------------------------------------------------------------------------------------------------
+
+pos 	Optional. 		A number specifying the position of the element you want to remove, default value is -1, which returns the last 
+			item
+
+Example
+------------
+
+l1=[10,40,50,70]
+print(l1)
+l1.pop()
+print(l1)
+l1.pop(1)
+print(l1)
+
+Output
+----------
+
+[10, 40, 50, 70]
+[10, 40, 50]
+[10, 50]
+
+9) remove()
+----------------
+
+The remove() method removes the first occurrence of the element with the specified value.
+
+Syntax
+----------
+
+list.remove(elmnt)
+
+Parameter Values
+-----------------------
+
+Parameter 	Required/Optional 	Description
+-------------- -------------------------	-----------------------------------------------------------------
+
+elmnt 	Required. 		Any type (string, number, list etc.) The element you want to remove
+
+Example
+------------
+
+l1=[10,20,40,10,50,80,70,90,10]
+print(l1)
+l1.remove(10)
+print(l1)
+
+Output
+----------
+
+[10, 20, 40, 10, 50, 80, 70, 90, 10]
+[20, 40, 10, 50, 80, 70, 90, 10]
+
+10) reverse()
+-----------------
+
+The reverse() method reverses the order of the elements.
+
+Syntax
+----------
+
+list.reverse()
+
+Parameter Values
+-----------------------
+
+No parameters
+
+Example
+------------
+
+l1=[10,20,50,80,70,90,40]
+print(l1)
+l1.reverse()
+print(l1)
+
+
+Output
+----------
+
+[10, 20, 50, 80, 70, 90, 40]
+[40, 90, 70, 80, 50, 20, 10]
+
+11) sort()
+-------------
+
+The sort() method sorts the list ascending by default.
+
+Syntax
+----------
+
+list.sort(reverse=True|False)
+
+Parameter Values
+-----------------------
+
+Parameter 	Required/Optional 	Description
+------------- --------------------------	--------------------------------------------------------------------------------------------------
+
+reverse 	Optional. 		reverse=True will sort the list in descending order. Default is reverse=False
+
+Example
+------------
+
+l1=[70,90,80,50,60,40,20,10]
+print(l1)
+l1.sort()
+print(l1)
+l1.sort(reverse=True)
+print(l1)
+
+Output
+----------
+
+[70, 90, 80, 50, 60, 40, 20, 10]
+[10, 20, 40, 50, 60, 70, 80, 90]
+[90, 80, 70, 60, 50, 40, 20, 10]
