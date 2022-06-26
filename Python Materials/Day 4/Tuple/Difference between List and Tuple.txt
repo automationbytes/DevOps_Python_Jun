@@ -1,0 +1,21 @@
+
+List											Tuple
+------------------------------------------------------------------------------------------------------------------------------------
+
+A list is a collection which is ordered and mutable(changeable).		A tuple is a collection which is ordered and immutable(non 
+										changeable).
+
+Lists are not hashable.								Tuples are hashable.
+
+Lists are usually used for storing a sequence of homogeneous elements.		Tuples are usually used for storing a sequence of heterogeneous 
+										elements.
+
+Since lists are mutable, iterating through list is comparatively slower than 	Since tuple are immutable, iterating through tuple is faster than 
+with tuple. 									with list.									 
+		
+Lists that contain mutable elements cannot be used as key for a dictionary.	Tuples that contain immutable elements can be used as key for a
+				 			 			dictionary.
+
+List elements are placed inside square braces and are separated by commas.	Tuple elements are placed inside square braces and are separated 
+										by commas.					
+													 					 

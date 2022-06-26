@@ -1,0 +1,47 @@
+User-defined functions
+------------------------------
+
+Functions that we define ourselves to do certain specific task are referred as user-defined functions.
+
+Functions that readily come with Python are called built-in functions. If we use functions written by others in the form of library, it can be termed 
+as library functions.
+
+All the other functions that we write on our own fall under user-defined functions. So, our user-defined function could be a library function to 
+someone else.
+
+Advantages of user-defined functions
+
+    User-defined functions help to decompose a large program into small segments which makes program easy to understand, maintain and debug.
+    
+    If repeated code occurs in a program. Function can be used to include those codes and execute when needed by calling that function.
+    
+    Programmers working on large project can divide the workload by making different functions.
+
+Example
+------------
+
+def add_numbers(x,y):
+   
+	sum = x + y
+   
+	return sum
+
+
+	num1 = 5
+
+	num2 = 6
+	
+
+print("The sum is", add_numbers(num1, num2))
+
+Output
+----------
+
+The sum is 11
+
+Here, we have defined the function add_numbers which adds two numbers and returns the result.
+
+This is our user-defined function. We could have multiplied the two numbers inside our function (it's all up to us), but this operation would not 
+be consistent with the name of the function. It would create ambiguity.
+
+It is always a good idea to name functions according to the task they perform.

@@ -1,0 +1,65 @@
+Tuple Methods
+---------------------
+
+Python has two methods that you can use on tuples.
+
+1)count()
+------------
+
+The count() method returns the number of times a specified value appears in the tuple.
+
+Syntax
+----------
+
+tuple.count(value)
+
+Parameter Values
+------------------------
+
+Parameter 	Description
+-------------	-------------------------------------------
+
+value 	Required. The item to search for
+
+Example
+------------
+
+car=('maruti','honda','hyundai','toyota','ford','maruti')
+print(car.count('maruti'))
+
+Output:
+----------
+
+2
+
+2)index()
+------------
+
+The index() method finds the first occurrence of the specified value.The index() method raises an exception if the value is not found.
+
+Syntax
+------------
+
+tuple.index(value)
+
+Parameter Values
+-------------------------
+
+Parameter 	Description
+-------------	-------------------------------------------
+
+value 	Required. The item to search for
+
+Example
+------------
+
+car=('maruti','honda','hyundai','toyota','ford','maruti')
+print(car.index('hyundai'))
+print(car.index(1))
+
+Output:
+----------
+
+2
+	print(car.index(1))
+ValueError: tuple.index(x): x not in tuple

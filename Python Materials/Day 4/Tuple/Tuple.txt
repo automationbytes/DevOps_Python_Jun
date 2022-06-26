@@ -1,0 +1,398 @@
+Tuple
+--------
+
+- A tuple is a collection which is ordered and immutable(unchangeable). 
+
+- Tuple is a collection of Python objects much like a list. The sequence of values stored in a tuple can be of any type, and they are indexed by 
+   integers. 
+
+- The important difference between a list and a tuple is that tuples are immutable. 
+
+- Also, Tuples are hashable whereas lists are not.
+
+- Values of a tuple are syntactically separated by ‘commas’. Although it is not necessary, it is more common to define a tuple by closing the 
+  sequence of values in parentheses. This helps in understanding the Python tuples more easily.
+
+- Tuples usually contain a sequence of heterogeneous elements that are accessed via unpacking or indexing (or even by attribute in the case of 
+   named tuples). Lists are mutable, and their elements are usually homogeneous and are accessed by iterating over the list.
+
+- Each element in a Tuple has an index associated with it. The index must be an integer. The index position starts from 0. If a Tuple contains 'n' 
+  number of elements, then that Tuple contains 0 to (n-1) indices. So, a Tuple having 5 elements will have index from 0 to 4.
+
+Advantages of Tuple over List
+-----------------------------------------
+
+Since, tuples are quite similiar to lists, both of them are used in similar situations as well.
+
+However, there are certain advantages of implementing a tuple over a list. Below listed are some of the main advantages:
+
+    We generally use tuple for heterogeneous (different) datatypes and list for homogeneous (similar) datatypes.
+
+    Since tuple are immutable, iterating through tuple is faster than with list. So there is a slight performance boost.
+
+    Tuples that contain immutable elements can be used as key for a dictionary. With list, this is not possible.
+
+    If you have data that doesn't change, implementing it as tuple will guarantee that it remains write-protected.
+
+ Creating a Tuple
+-----------------------
+
+In Python, tuples are created by placing sequence of values separated by ‘comma’ with or without the use of parentheses for grouping of data 
+sequence. Tuples can contain any number of elements and of any datatype (like strings, integers, list, etc.). Tuples can also be created with a 
+single element, but it is a bit tricky. Having one element in the parentheses is not sufficient, there must be a trailing ‘comma’ to make it a tuple.
+
+Note:
+--------
+
+Creation of Python tuple without the use of parentheses is known as Tuple Packing.
+
+Example
+------------
+
+# empty tuple
+t1= ()
+print(t1)
+
+Output
+----------
+
+()
+
+Example
+------------
+
+# tuple having integers
+
+t2= (1, 2, 3)
+
+print(t2)
+
+
+
+Output
+----------
+
+(1, 2, 3)
+
+Example
+------------
+
+# tuple with mixed datatypes
+ 
+tuple1= (1, "Hello", 3.4)
+
+print(tuple1)
+
+
+
+Output
+----------
+
+(1, "Hello", 3.4)
+
+
+Example
+------------
+
+# nested tuple
+
+new_tuple= ("welcome", [8, 4, 6], (1, 2, 3))
+
+print(new_tuple)
+
+
+
+Output
+----------
+
+('welcome', [8, 4, 6], (1, 2, 3))
+
+Example
+------------
+
+# tuple can be created without parentheses also called tuple packing
+tuple_pack = 3, 4.6, "dog"
+
+print(tuple_pack )
+
+
+Output
+----------
+
+(3, 4.6, 'dog')
+
+Example
+------------
+
+# tuple unpacking is also possible
+
+tuple_pack = 3, 4.6, "dog"
+
+a, b, c = tuple_pack 
+print(a)
+
+print(b)
+
+print(c)
+
+Output
+----------
+
+3
+4.6
+dog
+
+Accessing Elements in a Tuple
+----------------------------------------
+
+Index in Tuple
+-------------------
+
+You can access the list items (or) modify the list items by using the index operator [ ] and the index number.
+
+Trying to access an element outside the index boundary will raise an IndexError. The index must be an integer. We can't use float or other types, 
+this will result in TypeError. 
+
+Example
+-------------
+
+my_tuple = ("welcome")
+
+
+print(my_tuple[0])
+print(my_tuple[5])
+
+#print(my_tuple[8])
+
+
+# you will get an error.
+
+# IndexError: tuple index out of range
+
+
+
+#my_tuple[2.0]
+
+
+# index must be an integer
+
+
+# TypeError: tuple indices must be integers or slices, not float
+
+
+
+Output
+----------
+
+w
+m
+
+# nested tuple
+nested_tuple = ("hello", [8, 4, 6], (1, 2, 3))
+
+
+# nested index
+
+print(nested_tuple[0][3])
+#Output:1
+
+print(nested_tuple[1][1])
+#Output:4
+
+Output
+----------
+
+   l
+  4
+
+Negative Indexing
+-------------------------
+
+Python allows negative indexing for its sequences.
+
+The index of -1 refers to the last item, -2 to the second last item and so on.
+
+Example
+------------
+
+my_tuple = ('p','e','r','m','i','t')
+print(my_tuple[-1])
+
+
+
+# Output: 't'
+
+
+print(my_tuple[-6])
+
+# Output: 't'
+
+
+Output
+----------
+
+ t
+ p
+
+Slicing
+----------
+
+We can access a range of items in a tuple by using the slicing operator :(colon).
+
+Example
+------------
+
+my_tuple = ('p','r','o','g','r','a','m','m','i','n','g')
+
+# elements 2nd to 4th
+print(my_tuple[1:4])
+# Output: ('r', 'o', 'g')
+
+# elements beginning to 2nd
+print(my_tuple[:-7])
+# Output: ('p', 'r','o','g')
+
+# elements 8th to end
+print(my_tuple[7:])
+# Output: ('m', 'i', 'n', 'g')
+
+# elements beginning to end
+print(my_tuple[:])
+# Output: ('p', 'r', 'o', 'g', 'r', 'a', 'm','m','i','n','g')
+
+Output
+----------
+
+('r', 'o', 'g')
+('p', 'r', 'o', 'g')
+('m', 'i', 'n', 'g')
+('p', 'r', 'o', 'g', 'r', 'a', 'm', 'm', 'i', 'n', 'g')
+
+Changing a Tuple
+------------------------
+
+- Tuples are immutable.This means that elements of a tuple cannot be changed once it has been assigned. But, if the element is itself a mutable 
+  datatype like list, its nested items can be changed.
+
+- We can also assign a tuple to different values (reassignment).
+
+Example
+------------
+
+my_tuple = (4, 2, 3, [6, 5])
+
+
+
+# we cannot change an element in tuple
+
+#my_tuple[1] = 9
+
+
+"""
+ Output: you will get an error:
+ TypeError: 'tuple' object does not support item assignment
+
+"""
+# item of mutable element can be changed
+
+my_tuple[3][0] = 9
+
+# Output: my_tuple[3][0] = 9
+
+
+print(my_tuple)
+
+
+#Output:(4, 2, 3, [9, 5])
+
+
+
+Output
+----------
+
+(4, 2, 3, [9, 5])
+
+
+ Example
+------------
+
+# tuples can be reassigned
+
+my_tuple = (4, 2, 3, [6, 5])
+
+
+my_tuple = ('p','r','o','g','r','a','m')
+
+print(my_tuple)
+# Output: ('p', 'r', 'o', 'g', 'r', 'a', 'm', )
+
+
+Output
+----------
+
+('p', 'r', 'o', 'g', 'r', 'a', 'm', )
+
+Tuple Concatenation
+----------------------------
+
+We can use + operator to combine two tuples. This is also called concatenation.
+
+We can also repeat the elements in a tuple for a given number of times using the * operator.
+
+Both + and * operations result into a new tuple.
+
+Example
+--------------
+
+# Concatenation
+
+print((1, 2, 3) + (4, 5, 6))
+
+
+# Output: (1, 2, 3, 4, 5, 6)
+
+
+
+# Repeat
+
+print(("Repeat",) * 3)
+# Output: ('Repeat', 'Repeat', 'Repeat')
+
+
+Output
+----------
+(1, 2, 3, 4, 5, 6)
+('Repeat', 'Repeat', 'Repeat')
+
+Deleting a Tuple
+-----------------------
+
+We cannot change the elements in a tuple. That also means we cannot delete or remove items from a tuple.
+
+But deleting a tuple entirely is possible using the keyword del.
+
+Example
+-------------
+
+my_tuple = ('p','r','o','g','r','a','m','m','i','n','g')
+
+
+# can't delete items
+
+#del my_tuple[3]
+
+
+# you will get an error:
+
+# TypeError: 'tuple' object doesn't support item deletion
+
+
+
+# can delete entire tuple
+
+del my_tuple
+
+
+my_tuple
+# NameError: name 'my_tuple' is not defined
+

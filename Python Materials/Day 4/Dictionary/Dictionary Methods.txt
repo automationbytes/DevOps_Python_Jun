@@ -1,0 +1,370 @@
+Dictionary Methods
+---------------------------
+
+1) clear()
+-------------
+
+The clear() method removes all the elements from a dictionary.
+
+Syntax
+----------
+
+dictionary.clear()
+
+Parameter Values
+-----------------------
+
+No parameters
+
+Example
+------------
+
+car={"company":"tata","model":"indica","year":2000}
+print(car)
+car.clear()
+print(car)
+
+Output
+---------
+
+{'company': 'tata', 'model': 'indica', 'year': 2000}
+{}
+
+2) copy()
+-------------
+ 
+The copy() method returns a copy of the specified dictionary.
+
+Syntax
+----------------------
+
+dictionary.copy()
+
+Parameter Values
+----------------------
+
+No parameters
+
+Example
+------------
+
+car={"company":"tata","model":"indica","year":2000}
+new_car=car.copy()
+print(id(car))
+print(id(new_car))
+print(new_car)
+
+Output
+---------
+
+57600544
+62341264
+{'company': 'tata', 'model': 'indica', 'year': 2000}
+
+3) fromkeys()
+------------------
+
+The fromkeys() method returns a dictionary with the specified keys and values.
+
+Syntax
+---------
+
+dict.fromkeys(keys, value)
+
+Parameter Values
+------------------------
+
+Parameter 	Required / Optional		Description
+--------------	------------------------------------------	---------------------------------------------------------------------------------------------------
+
+keys 	Required. 			An iterable specifying the keys of the new dictionary
+
+value 	Optional. 			The value for all keys. Default value is None
+
+Example
+------------
+
+car={"company":"tata","model":"indica","year":2000}
+car_value=10
+#keys from car, value is default, which is none
+test_car=dict.fromkeys(car)
+#keys from car, value is from car_value
+new_car=dict.fromkeys(car,car_value)
+print(new_car)
+print(test_car)
+
+Output
+---------
+
+{'company': 10, 'model': 10, 'year': 10}
+{'company': None, 'model': None, 'year': None}
+
+4) get()
+----------
+
+The get() method returns the value of the item with the specified key.
+
+Syntax
+----------
+
+dictionary.get(keyname, value)
+
+Parameter Values
+-----------------------
+
+Parameter 	Required / Optional		Description
+--------------	------------------------------------------	---------------------------------------------------------------------------------------------------
+
+keyname 	Required. 			The keyname of the item you want to return the value from.
+
+value 	Optional. 			A value to return if the specified key does not exist. Default value is None.
+
+
+Example
+------------
+
+car={"company":"tata","model":"indica","year":2000}
+print(car.get("model"))
+
+Output
+---------
+
+indica
+
+5) items()
+-------------
+
+The items() method returns a view object. The view object contains the key-value pairs of the dictionary, as tuples in a list. The view object will 
+reflect any changes done to the dictionary.
+
+Syntax
+----------
+
+dictionary.items()
+
+Parameter Values
+-----------------------
+
+No parameters
+
+Example
+------------
+
+car={"company":"tata","model":"indica","year":2000}
+x=car.items()
+car["year"]=2005
+print(x)
+
+Output
+---------
+
+dict_items([('company', 'tata'), ('model', 'indica'), ('year', 2005)])
+
+6) keys()
+-------------
+
+The keys() method returns a view object. The view object contains the keys of the dictionary, as a list. The view object will reflect any changes 
+done to the dictionary.
+
+Syntax
+----------
+
+dictionary.keys()
+
+Parameter Values
+-----------------------
+
+No parameters
+
+Example
+------------
+
+car={"company":"tata","model":"indica","year":2000}
+x=car.keys()
+print(x)
+
+Output
+---------
+
+dict_keys(['company', 'model', 'year'])
+
+7) pop()
+-----------
+
+The pop() method removes the specified item from the dictionary. The value of the removed item is the return value of the pop() method.
+
+Syntax
+------------
+
+dictionary.pop(keyname, defaultvalue)
+
+Parameter Values
+-----------------------
+
+Parameter 		Required / Optional		Description
+--------------		------------------------------------------	-----------------------------------------------------------------------------------------------------------------
+
+keyname 		Required. 			The keyname of the item you want to remove
+
+defaultvalue 	Optional. 			A value to return if the specified key do not exist. If this parameter is not specified, and 
+					the no item with the specified key is found, an error is raised
+
+
+Example
+------------
+
+car = { "brand": "Ford","model": "Mustang","year": 1964}
+car.pop("model")
+print(car) 
+
+
+Output
+---------
+
+8) popitem()
+-----------------
+
+The popitem() method removes the item that was last inserted into the dictionary. In versions before 3.7, the popitem() method removes a random item.
+
+The removed item is the return value of the popitem() method.
+
+Syntax
+-----------
+
+dictionary.popitem(keyname, defaultvalue)
+
+Parameter Values
+-----------------------
+
+No parameters
+
+Example
+------------
+
+car = { "brand": "Ford", "model": "Mustang","year": 1964}
+x = car.popitem()
+print(x) 
+
+Output
+---------
+
+('year', 1964)
+
+9) setdefault()
+-------------------
+
+The setdefault() method returns the value of the item with the specified key.If the key does not exist, insert the key, with the specified value.
+
+Syntax
+----------
+
+dictionary.setdefault(keyname, value)
+
+Parameter Values
+------------------------
+
+Parameter 		Required / Optional		Description
+-------------------------	------------------------------------------	-----------------------------------------------------------------------------------------------------------------
+
+keyname 		Required. 			The keyname of the item you want to return the value from
+
+value 		Optional.			If the key exist, this parameter has no effect.If the key does not exist, this value becomes 
+					the key's value. Default value is None.
+
+Example
+------------
+
+car = { "brand": "Ford","model": "Mustang","year": 1964}
+x = car.setdefault("model", "Bronco")
+print(x) 
+
+Output
+---------
+
+Mustang
+
+car = { "brand": "Ford","model": "Mustang","year": 1964}
+car.setdefault("Owner", "Tom")
+print(car) 
+
+Output
+---------
+
+#Tom
+{'brand': 'Ford', 'model': 'Mustang', 'year': 1964, 'owner': 'Tom'}
+
+
+
+
+10) update()
+----------------
+
+The update() method inserts the specified items to the dictionary. The specified items can be a dictionary, or an iterable object.
+
+Syntax
+----------
+
+dictionary.update(iterable)
+
+Parameter Values
+-----------------------
+
+Parameter 	Description
+-------------	-----------------------------------------------------------------------------------------------------------------------
+
+iterable 	A dictionary or an iterable object with key value pairs, that will be inserted to the dictionary
+
+Example
+------------
+
+car = {"brand": "Ford","model": "Mustang","year": 1964}
+car.update({"color": "White"})
+print(car)
+
+Output
+---------
+
+{'brand': 'Ford', 'model': 'Mustang', 'year': 1964, 'color': 'White'}
+
+11) values()
+----------------
+
+The values() method returns a view object. The view object contains the values of the dictionary, as a list.The view object will reflect any 
+changes done to the dictionary.
+
+Syntax
+----------
+
+dictionary.values()
+
+Parameter Values
+-----------------------
+
+No parameters
+
+Example
+------------
+
+car = { "brand": "Ford","model": "Mustang","year": 1964}
+x = car.values()
+print(x) 
+
+Output
+---------
+
+dict_values(['Ford', 'Mustang', 1964])
+
+When a values is changed in the dictionary, the view object also gets updated.
+
+Example
+------------
+
+car = {"brand": "Ford","model": "Mustang","year": 1964}
+x = car.values()
+car["year"] = 2018
+print(x) 
+
+Output
+---------
+
+dict_values(['Ford', 'Mustang', 2018])
