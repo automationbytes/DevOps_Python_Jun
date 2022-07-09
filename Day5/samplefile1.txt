@@ -1,0 +1,3 @@
+Hello
+This is sample program to add values to file 
+File Handling in Python

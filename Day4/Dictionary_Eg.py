@@ -94,6 +94,7 @@ print(newdict,"new dict")
 newdict.clear()
 print(newdict)
 
+#mydict.values()
 #Lab exercises:
 #1) Check whether we hav specified key
 #2) Find the sum of all the values in the dict
