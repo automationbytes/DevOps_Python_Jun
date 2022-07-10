@@ -1,0 +1,51 @@
+xpath -xml path
+
+absolute xpath - /
+relative xpath - //
+
+1)Normal Xpath
+//tagname[@attribute = 'value']
+
+//input[@data-testid="royal_email"]
+
+//input[@class="inputtext _55r1 _6luy"]
+
+2)(Startswith, endswith, contains)
+
+placeholder="Email address"
+
+//tagname[contains(@attribute, 'val')]
+//input[contains(@placeholder,"Email address ")]
+
+
+3)We can use and/or in xpath
+//tagname[@attribute1 = 'value1' and @attribute2 = 'value2']
+
+//input[@type="text" and @name="email"]
+
+4) and/or in contains
+//input[@type="text" and contains(@placeholder,"First n")]
+
+5) text()
+//tagname[text() = 'value']
+//a[text()='Forgotten password?']
+
+6) text() with contains
+//tagname[contains(text(), 'val')]
+//a[contains(text(), 'password')]
+
+-------------------------------------------
+input[id = 'email']
+
+#id
+.classname
+
+2) contains
+
+input[placeholder*=" phone number"]
+
+3) starts-with ^=
+input[placeholder ^= "Email address]
+
+4) ends-with $=
+input[placeholder $= 'phone number']
