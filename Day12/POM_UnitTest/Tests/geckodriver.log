@@ -1,0 +1,79 @@
+1659277461760	geckodriver	INFO	Listening on 127.0.0.1:58588
+1659277464854	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58589" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Vigne\\AppData\\Local\\Temp\\rust_mozprofilefjfaYr"
+1659277465726	Marionette	INFO	Marionette enabled
+1659277465738	Marionette	INFO	Listening on port 58598
+WebDriver BiDi listening on ws://localhost:58589
+Read port: 58598
+1659277466006	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Vigne\\AppData\\Local\\Temp\\rust_mozprofilefjfaYr\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:58589/devtools/browser/e5cf2dd9-adc4-46dc-b8a4-84e062a82eb3
+1659277472316	Marionette	INFO	Stopped listening on port 58598
+[Parent 13508, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1659277527974	geckodriver	INFO	Listening on 127.0.0.1:58633
+1659277531040	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58634" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Vigne\\AppData\\Local\\Temp\\rust_mozprofileN181oM"
+1659277531531	Marionette	INFO	Marionette enabled
+1659277531537	Marionette	INFO	Listening on port 58643
+WebDriver BiDi listening on ws://localhost:58634
+Read port: 58643
+1659277531788	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Vigne\\AppData\\Local\\Temp\\rust_mozprofileN181oM\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:58634/devtools/browser/ac19f732-16cf-4ce8-807d-16ee7f06df16
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://opensource-demo.orangehrmlive.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://opensource-demo.orangehrmlive.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1659277540016	Marionette	INFO	Stopped listening on port 58643
+1659278009069	geckodriver	INFO	Listening on 127.0.0.1:58737
+1659278012144	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58738" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Vigne\\AppData\\Local\\Temp\\rust_mozprofile1w8gsJ"
+1659278012661	Marionette	INFO	Marionette enabled
+1659278012669	Marionette	INFO	Listening on port 58747
+WebDriver BiDi listening on ws://localhost:58738
+Read port: 58747
+1659278013172	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Vigne\\AppData\\Local\\Temp\\rust_mozprofile1w8gsJ\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:58738/devtools/browser/49da4c74-e05e-44c2-8be9-8db9b3534836
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://opensource-demo.orangehrmlive.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://opensource-demo.orangehrmlive.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1659278020966	Marionette	INFO	Stopped listening on port 58747
+1659278101306	geckodriver	INFO	Listening on 127.0.0.1:58780
+1659278104397	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58781" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Vigne\\AppData\\Local\\Temp\\rust_mozprofileLpvTAq"
+1659278104977	Marionette	INFO	Marionette enabled
+1659278104984	Marionette	INFO	Listening on port 58790
+WebDriver BiDi listening on ws://localhost:58781
+Read port: 58790
+1659278105219	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Vigne\\AppData\\Local\\Temp\\rust_mozprofileLpvTAq\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:58781/devtools/browser/6b8bb425-e6cc-40b3-812e-f3335cd51611
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://opensource-demo.orangehrmlive.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://opensource-demo.orangehrmlive.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1659278113416	Marionette	INFO	Stopped listening on port 58790
+[Parent 17748, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+[Parent 17748, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1659278232256	geckodriver	INFO	Listening on 127.0.0.1:58822
+1659278235313	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58823" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Vigne\\AppData\\Local\\Temp\\rust_mozprofile1s77cb"
+1659278235842	Marionette	INFO	Marionette enabled
+1659278235850	Marionette	INFO	Listening on port 58832
+WebDriver BiDi listening on ws://localhost:58823
+Read port: 58832
+1659278236098	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Vigne\\AppData\\Local\\Temp\\rust_mozprofile1s77cb\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:58823/devtools/browser/ff0a57aa-2d54-4505-b7f8-6ec6eb896018
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://opensource-demo.orangehrmlive.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://opensource-demo.orangehrmlive.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1659278244561	Marionette	INFO	Stopped listening on port 58832
+[Parent 2536, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1659278292435	geckodriver	INFO	Listening on 127.0.0.1:58889
+1659278295511	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58890" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Vigne\\AppData\\Local\\Temp\\rust_mozprofileJu9t3L"
+1659278296019	Marionette	INFO	Marionette enabled
+1659278296028	Marionette	INFO	Listening on port 58899
+WebDriver BiDi listening on ws://localhost:58890
+Read port: 58899
+1659278296259	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Vigne\\AppData\\Local\\Temp\\rust_mozprofileJu9t3L\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:58890/devtools/browser/8652525f-30bd-453f-aa3b-2fc2eb4d6e69
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://opensource-demo.orangehrmlive.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://opensource-demo.orangehrmlive.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1659278304818	Marionette	INFO	Stopped listening on port 58899

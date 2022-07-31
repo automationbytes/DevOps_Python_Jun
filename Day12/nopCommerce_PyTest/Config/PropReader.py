@@ -11,5 +11,5 @@ class PropReader:
 # itemview = propfile.items()
 # for item in itemview:
 #     print(item[1].data)
-
-#print(PropReader.readProp("password"))
+#
+# print(readProp("password"))
